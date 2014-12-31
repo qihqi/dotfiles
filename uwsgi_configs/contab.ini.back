@@ -1,0 +1,10 @@
+[uwsgi]
+plugins = python
+socket = /tmp/contabilidad.sock
+#socket = 127.0.0.1:8001 
+master = true
+enable-threads = true
+processes = 2
+wsgi-file = /var/servidor/contabilidad/contabilidad/wsgi.py
+virtualenv = /var/servidor/henry-env
+chdir = /var/servidor/henry
